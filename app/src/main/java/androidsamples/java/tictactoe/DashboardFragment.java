@@ -17,6 +17,8 @@ import androidx.navigation.NavController;
 import androidx.navigation.NavDirections;
 import androidx.navigation.Navigation;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class DashboardFragment extends Fragment {
 
   private static final String TAG = "DashboardFragment";
@@ -50,6 +52,11 @@ public class DashboardFragment extends Fragment {
     mNavController = Navigation.findNavController(view);
 
     // TODO if a user is not logged in, go to LoginFragment
+    FirebaseAuth mAuth= FirebaseAuth.getInstance();
+
+    if(mAuth.getCurrentUser()==null)
+      mNavController.navigate(DashboardFragmentDirections.actionNeedAuth());
+
 
     // Show a dialog when the user clicks the "new game" button
     view.findViewById(R.id.fab_new_game).setOnClickListener(v -> {
@@ -66,7 +73,7 @@ public class DashboardFragment extends Fragment {
 
         // Passing the game type as a parameter to the action
         // extract it in GameFragment in a type safe way
-        NavDirections action = DashboardFragmentDirections.actionGame(gameType);
+        NavDirections action = (NavDirections) DashboardFragmentDirections.actionGame(gameType);
         mNavController.navigate(action);
       };
 
