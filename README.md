@@ -12,8 +12,10 @@ The app allows a person to sign in and play tic-tac-toe. His password will be re
 
 ## Bugs:
 
+[APP DOESN'T CRASH ANYMORE]
 Clicking on login twice leads to the app crashing as the second time Firebase throws an exception that the account already exists and that exception is not dealt with properly. I tried to fix it but it's been thrown inside the listener somewhere and I cannot tell.
 
+[FIXED]
 Clicking on log out closes the app as there is an error with the navigation. If I simply remove the navigation code the user is signed out but the app remains in the dashboard. Although I would fix this in the future, the app closing on logging out can be thought of a feature.
 
 ## Task#### Description
@@ -22,10 +24,15 @@ Clicking on log out closes the app as there is an error with the navigation. If 
 
 The register feature does store emails and password on the backend but the sign in feature is not yet implemented, at least not on the same button. Having two buttons would've made it much easier as I do have the sign in code(commented after the register code) but the only way to tell if it's sign in or register is through the app crashing
 The app can run offline as firebase apps automatically handle temporary network interruptions. Cached data is available while offline and Firebase resends any writes when network connectivity is restored.
+
 Code taken from:
+
 https://stackoverflow.com/questions/40093781/check-if-given-email-exists
+
 https://www.youtube.com/watch?v=d88BPU4Daso
+
 https://www.examplefiles.net/cs/1026361
+
 https://firebase.google.com/docs/auth/android/password-auth?authuser=0
 
 Floating Button and log out also works, along with the log out and exit feature. The dashboard doesn't work
