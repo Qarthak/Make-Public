@@ -8,6 +8,8 @@ Email: f20190125@goa.bits-pilani.ac.in
 
 The app allows a person to sign in and play tic-tac-toe. His password will be remembered on FirebaseAuth and is not visible to the developer under the current settings.
 
+
+
 ![1638901524781.png](image/README/1638901524781.png)![1638901550561.png](image/README/1638901550561.png)![1638901566190.png](image/README/1638901566190.png)![1638901610578.png](image/README/1638901610578.png)
 
 ## Bugs:
@@ -18,7 +20,7 @@ Clicking on login twice leads to the app crashing as the second time Firebase th
 [FIXED]
 Clicking on log out closes the app as there is an error with the navigation. If I simply remove the navigation code the user is signed out but the app remains in the dashboard. Although I would fix this in the future, the app closing on logging out can be thought of a feature.
 
-## Task#### Description
+## Task Description
 
 #### Task 1
 
