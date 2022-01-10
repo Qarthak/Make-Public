@@ -14,9 +14,6 @@ The app allows a person to sign in and play tic-tac-toe. His password will be re
 
 ## Bugs:
 
-[APP DOESN'T CRASH ANYMORE]
-Clicking on login twice leads to the app crashing as the second time Firebase throws an exception that the account already exists and that exception is not dealt with properly. I tried to fix it but it's been thrown inside the listener somewhere and I cannot tell.
-
 [FIXED]
 Clicking on log out closes the app as there is an error with the navigation. If I simply remove the navigation code the user is signed out but the app remains in the dashboard. Although I would fix this in the future, the app closing on logging out can be thought of a feature.
 
