@@ -1,7 +1,9 @@
 # Tic Tac Toe
 
 Name of the project: Tic Tac Toe
+
 Name: Sarthak Chaudhary
+
 Email: f20190125@goa.bits-pilani.ac.in
 
 ## Description:
