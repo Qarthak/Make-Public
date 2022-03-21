@@ -47,13 +47,10 @@ The game works flawlessly(I've tested it too many times, even using monkey) and 
 
 The forfeit dialog button is also implemented well. The lack of dashboard means that certain features are not there though.
 
-#### Task 3
-
-2 player is not implemented
 
 #### Dependancies:
 
-I've used Firebase and Firebase Auth and everythin else is standard. Android studio will install these while synching the gradle files
+I've used Firebase and Firebase Auth and everything else is standard. Android studio will install these while synching the gradle files
 
 #### Time taken and difficulty
 
